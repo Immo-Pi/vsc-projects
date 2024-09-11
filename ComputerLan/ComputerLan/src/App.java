@@ -7,6 +7,7 @@ public class App {
         new Teilnehmer("Torben Spahn", 187, 2425, s1).addSeminar(s2);
         new Teilnehmer("Tom R", 188, 2426, s1);
         new Teilnehmer("Paul Fehl", 189, 2427, s1);
+        new Teilnehmer("Toni Tonius", 193, 2429, s1).addSeminar(s2);
 
         new Teilnehmer("Finja Friedrich", 190, 2425, s2).addSeminar(s1);
         new Teilnehmer("Vincent Abels", 191, 2426, s2);
