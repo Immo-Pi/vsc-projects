@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class Seminare {
     private int dauer;
@@ -35,7 +36,13 @@ public class Seminare {
         }
     }
     public void getTeilnehmer3(){
-
+        Iterator<Teilnehmer> it = teilnehmer.iterator();
+        int i = 0;
+        while(it.hasNext()){
+            System.out.println("Kd-Nr. : "+teilnehmer.get(i).getKdr()+" | Vor- und Nachname: "+teilnehmer.get(i).getName()+" | Kto-Nr.: "+teilnehmer.get(i).getKdr()+" | BLZ: "+teilnehmer.get(i).getBlz());
+            i++;
+            it.next();
+        }
     }
 
     public int getDauer() {
