@@ -29,6 +29,14 @@ public class Seminare {
             System.out.println("Kd-Nr. : "+teilnehmer.get(i).getKdr()+" | Vor- und Nachname: "+teilnehmer.get(i).getName()+" | Kto-Nr.: "+teilnehmer.get(i).getKdr()+" | BLZ: "+teilnehmer.get(i).getBlz());
         }
     }
+    public void getTeilnehmer2(){
+        for(Teilnehmer i :teilnehmer) {
+            System.out.println("Kd-Nr. : "+i.getKdr()+" | Vor- und Nachname: "+i.getName()+" | Kto-Nr.: "+i.getKdr()+" | BLZ: "+i.getBlz());
+        }
+    }
+    public void getTeilnehmer3(){
+
+    }
 
     public int getDauer() {
         return dauer;

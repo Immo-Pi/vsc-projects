@@ -13,9 +13,9 @@ public class App {
         new Teilnehmer("Tom B", 192, 2427, s2);
         
         System.out.println("Seminar 1:");
-        s1.getTeilnehmer();
+        s1.getTeilnehmer2();
         System.out.println("\nSeminar 2");
-        s2.getTeilnehmer();
+        s2.getTeilnehmer2();
 
     }
 }
