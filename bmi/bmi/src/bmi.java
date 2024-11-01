@@ -2,6 +2,7 @@ public class bmi {
     
     private double groeße;
     private double gewicht;
+    private double bmi;
 
     public bmi(double groeße, double gewicht){
         this.gewicht = gewicht;
@@ -9,15 +10,17 @@ public class bmi {
     }
 
     public double rechner(){
-        return gewicht/(groeße*groeße);
+        bmi = gewicht/(groeße*groeße);
+        return bmi;
     }
 
     public void ausgabe(){
+        rechner();
         System.out.println("dein BMI ist :"+rechner());
-        if (rechner() > 28) {
+        if (bmi > 28) {
             System.out.println("übergewicht \n");
         }
-        else if (rechner() < 21){
+        else if (bmi < 21){
             System.out.println("untergewicht \n");
         }
         else{
