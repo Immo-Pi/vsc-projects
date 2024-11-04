@@ -5,10 +5,10 @@ public class Monster {
 
 
  
-    public Monster(){
-        health = 100;
-        damage = 5;
-        xpValue = 5;
+    public Monster(int health, int damage, int xpValue){
+        this.health = health;
+        this.damage = damage;
+        this.xpValue = xpValue;
     }
     
     public int getDamage() {
