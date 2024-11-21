@@ -18,7 +18,7 @@ public class Player {
             xp = xp - 10;
             damage += 5;
             MAX_HEALTH += 20;
-            System.out.println("Level Up \nSchaden : "+damage+" Leben :"+health);
+            System.out.println("Level Up \nSchaden : "+damage+" Max Leben :"+MAX_HEALTH);
         }
     }
     public int getDamage() {

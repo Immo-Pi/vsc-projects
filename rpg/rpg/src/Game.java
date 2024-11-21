@@ -18,7 +18,7 @@ public class Game {
             }        
         System.out.println("Kampf tritt auf");
         System.out.println("\nSpieler :"+player.getHealth()+ " Leben ||"+player.getDamage()+" Schaden ||"+player.getLevel()+" Level ||"+player.getXp()+" XP");
-        System.out.println("Monster :"+monster.getHealth() + " Leben ||"+monster.getDamage()+" Schaden ||"+monster.getXpValue()+" XP");   
+        System.out.println("Monster :"+monster.getHealth() + " Leben ||"+monster.getDamage()+" Schaden ||"+monster.getXpValue()+" XP"+"|| Name : "+monster.getName());   
                 monster.setHealth(monster.getHealth()-player.getDamage());
                 System.out.println("\nMonster hat "+player.getDamage()+" Schaden genommen und hat noch "+monster.getHealth()+" HP");
 
@@ -68,16 +68,20 @@ public class Game {
         final int MAX_DAMAGE = 20;
         final int MIN_XPVALUE = 2;
         final int MAX_XPVALUE = 10;
-
+        final String[] MONSTER_NAMEN = {"Paul", "Benedikt", "Leo", "Irmio", "Maxim", "Nico" , "Paul Fehl"};
         Random randmom = new Random();
 
         int health = randmom.nextInt(MAX_HEALTH - MIN_HEALTH + 1) + MIN_HEALTH;
         int damage = randmom.nextInt(MAX_DAMAGE - MIN_DAMAGE + 1) + MIN_DAMAGE;
         int xpValue = randmom.nextInt(MAX_XPVALUE - MIN_XPVALUE + 1) + MIN_XPVALUE;
+        String name = MONSTER_NAMEN[randmom.nextInt(MONSTER_NAMEN.length)];
 
-        monster = new Monster(health, damage, xpValue);
+
+
+        monster = new Monster(health, damage, xpValue, name);
         System.out.println("Ein Monster ist erschienen");
-        System.out.println("Monster :"+monster.getHealth() + " Leben ||"+monster.getDamage()+" Schaden ||"+monster.getXpValue()+" XP");
+        System.out.println("Monster :"+monster.getHealth() + " Leben ||"+monster.getDamage()+" Schaden ||"+monster.getXpValue()+" XP"+"|| Name : "+monster.getName());
+        System.out.println("Spieler :"+player.getHealth()+ " Leben ||"+player.getDamage()+" Schaden ||"+player.getLevel()+" Level ||"+player.getXp()+" XP");
     }
     }
 

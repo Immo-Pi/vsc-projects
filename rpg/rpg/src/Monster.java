@@ -2,13 +2,13 @@ public class Monster {
     private int health;
     private int damage;
     private int xpValue;
+    private String name;
 
-
- 
-    public Monster(int health, int damage, int xpValue){
+    public Monster(int health, int damage, int xpValue, String name){
         this.health = health;
         this.damage = damage;
         this.xpValue = xpValue;
+        this.name = name;
     }
     
     public int getDamage() {
@@ -28,6 +28,12 @@ public class Monster {
     }
     public void setXpValue(int xpValue) {
         this.xpValue = xpValue;
+    }
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
     }
 
 

@@ -1,6 +1,8 @@
 import java.util.ArrayList;
 
-public class Fahrzeug {
+import javax.print.DocFlavor.STRING;
+
+public abstract class Fahrzeug {
    
     private static int counter;
     private int fzNr;
@@ -23,6 +25,13 @@ public class Fahrzeug {
     public static void getListe(){
         for(Fahrzeug i : liste ){
             System.out.println(i.getClass()+" : "+i.getMarke() +" "+i.getBaujahr()+" "+i.getFarbe()+" "+i.getFzNr()+"\n");
+        }
+    }
+    public static void searchListeForClass(Object klasse){
+        for(Fahrzeug i : liste){
+            if(klasse.getClass() == i.getClass()){
+                System.out.println(i.getClass()+" : "+i.getMarke() +" "+i.getBaujahr()+" "+i.getFarbe()+" "+i.getFzNr()+"\n");
+            }
         }
     }
     public int getFzNr() {
