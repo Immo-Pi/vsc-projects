@@ -3,6 +3,8 @@ import java.util.Scanner;
 
 public class Client
 {
+    
+
     private Scanner scanner;
 
     public Client()
@@ -16,7 +18,6 @@ public class Client
         System.out.println();
         System.out.print("--> ");
         String eingabe = scanner.nextLine();
-        
-        return eingabe;
+        return eingabe.trim();
     }
 }

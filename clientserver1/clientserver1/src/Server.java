@@ -1,9 +1,4 @@
-/**
- * Beschreiben Sie hier die Klasse Server.
- * 
- * @author (Ihr Name) 
- * @version (eine Versionsnummer oder ein Datum)
- */
+
 public class Server
 {
     private Client client;
