@@ -43,6 +43,6 @@ public class FTServerThread extends Thread{
             
         }
         clientSocket.write("bye");
-        clientSocket.close();
+        clientSocket.close();   
     }
 }
